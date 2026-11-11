@@ -20,12 +20,28 @@
     <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="../#about">About</a><a href="../#research">Research</a><a href="../#projects">Projects</a><a href="./" aria-current="page">Coursework</a><a href="../#teaching">Teaching</a><a class="nav-resume" href="../documents/Elisa_Bucci_CV.pdf" target="_blank" rel="noopener">Resume ↗</a></nav>
   </div></header>
   <main id="main">
-    <section class="archive-hero"><div class="container"><span class="eyebrow">MATHEMATICS / NOTES &amp; ASSIGNMENTS</span><h1>Learning, one <em>problem at a time.</em></h1><p>A curated space for selected coursework, mathematical notes, coding exercises, and problem sets. Materials will be added after review and with appropriate course permissions.</p><a class="button button-ghost" href="../">← Back to portfolio</a></div></section>
-    <section class="archive-main"><div class="container"><div class="archive-toolbar"><span class="archive-count" id="archive-count">Coursework archive</span><div class="filter-bar" id="assignment-filters" aria-label="Filter assignments"></div></div>
+    <section class="archive-hero"><div class="container"><span class="eyebrow">MATHEMATICS / NOTES &amp; ASSIGNMENTS</span><h1>Learning, one <em>problem at a time.</em></h1><p>Selected coursework in mathematical statistics and statistical learning, from theoretical derivations to reproducible Python notebooks. These are class assignments, not research publications.</p><a class="button button-ghost" href="../">← Back to portfolio</a></div></section>
+
+    <section class="course-overview"><div class="container">
+      <div class="overview-intro"><span class="section-index">TWO COMPLEMENTARY THREADS</span><h2>Theory <span class="serif-accent">meets computation.</span></h2><p>Mathematical arguments and computational experiments offer two ways to understand uncertainty, estimation, and prediction.</p></div>
+      <div class="overview-grid">
+        <article class="overview-card"><span>MATH 541B / STATISTICAL INFERENCE</span><h3>Statistical theory &amp; estimation</h3><p>Hypothesis testing, likelihood methods, sufficient statistics, confidence intervals, and resampling. Five selected written problem sets.</p><div class="tag-list"><span>Likelihood</span><span>Inference</span><span>Bootstrap</span></div><a href="#assignment-list" data-setfilter="MATH 541B">Explore problem sets ↗</a></article>
+        <article class="overview-card"><span>MATH 550 / STATISTICAL LEARNING</span><h3>Statistical learning &amp; Python</h3><p>Classification, regularization, cross-validation, PCA and Monte Carlo experiments. Nine nonduplicated notebooks, available as readable HTML and source.</p><div class="tag-list"><span>Python</span><span>scikit-learn</span><span>Modeling</span></div><a href="#assignment-list" data-setfilter="MATH 550">Explore notebooks ↗</a></article>
+      </div>
+      <div class="spotlight-heading"><span class="section-index">SELECTED TECHNICAL WORK</span><h2>Start with <span class="serif-accent">these.</span></h2></div>
+      <div class="spotlight-grid">
+        <article class="spotlight-card"><span>01 / CLASSIFICATION</span><h3>Market-direction prediction</h3><p>Compared five classical classifiers on historical market-direction data, using holdout evaluation and confusion matrices.</p><a href="notebooks/math550/hw-04.html">Read notebook ↗</a></article>
+        <article class="spotlight-card"><span>02 / MODEL SELECTION</span><h3>Feature selection &amp; Lasso</h3><p>Explored stepwise selection, regularization and cross-validation on synthetic polynomial models.</p><a href="notebooks/math550/hw-06.html">Read notebook ↗</a></article>
+        <article class="spotlight-card"><span>03 / LINEAR ALGEBRA</span><h3>PCA from first principles</h3><p>Implemented covariance eigendecomposition on the Iris dataset and compared principal components with scikit-learn.</p><a href="notebooks/math550/mini-04.html">Read notebook ↗</a></article>
+      </div>
+    </div></section>
+    <section class="archive-main"><div class="container"><div class="archive-toolbar"><div><span class="section-index">COMPLETE COLLECTION</span><h2 class="catalog-title">Problem sets <span class="serif-accent">& notebooks.</span></h2><span class="archive-count" id="archive-count">Coursework archive</span></div><div class="filter-bar" id="assignment-filters" aria-label="Filter assignments"></div></div>
       <div id="assignment-list" class="assignment-grid"></div>
+      <p class="archive-disclaimer">These materials are course assignments and exploratory notebooks. Solutions have not been independently audited. Some notebooks depend on course datasets not bundled here. Please review institutional sharing policies before publishing.</p>
       <div id="archive-empty" class="archive-empty"><div class="empty-figure" aria-hidden="true">∑</div><h2>Assignments are coming soon.</h2><p>This archive is ready to grow. Selected problems, write-ups, and notebooks will appear here once shared.</p></div>
     </div></section>
   </main>
+  <script>document.querySelectorAll("[data-setfilter]").forEach(a=>a.addEventListener("click",()=>{const key=a.dataset.setfilter;requestAnimationFrame(()=>{const btn=[...document.querySelectorAll(".filter-button")].find(b=>b.textContent===key);if(btn)btn.click()})}));</script>
   <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><span class="brand-mark">eb<span class="brand-dot">.</span></span><span>Elisa Bucci</span></div><p>Mathematics · Statistical learning · Optimization</p><div class="footer-links"><a href="mailto:ebucci@usc.edu">Email</a><a href="../documents/Elisa_Bucci_CV.pdf">Resume</a><a href="../">Portfolio</a><a data-link="linkedin" hidden target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> Elisa Bucci</span><a href="../">Back to portfolio ↑</a></div></footer>
 </body>
 </html>

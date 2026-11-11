@@ -5,9 +5,9 @@ Static, responsive GitHub Pages website for Elisa Bucci, Mathematics Ph.D. stude
 ## Contents
 
 - `index.html` — Homepage: about, doctoral research, selected theses, coursework, teaching and education
-- `coursework/index.html` — Coursework archive (currently empty on purpose)
-- `coursework/data.js` — Simple list of assignments to publish in the future
-- `coursework/files/` — Put approved homework PDFs, notebooks and code here
+- `coursework/index.html` — Coursework archive (MATH 541B PDF solutions + MATH 550 notebooks)
+- `coursework/data.js` — Metadata for 14 curated coursework entries
+- `coursework/files/` — Curated math541b PDFs and math550 source notebooks
 - `documents/Elisa_Bucci_CV.pdf` — Website version of the résumé (phone number omitted for public sharing)
 - `documents/*Thesis*.pdf` — Original Master's and Bachelor's theses
 - `assets/style.css`, `assets/site.js` — Theme, mobile navigation and social links
@@ -43,6 +43,22 @@ window.ELISA_SITE = {
 ```
 
 LinkedIn links automatically appear in the main site's contact area and both footers when a real HTTPS link is supplied. The GitHub URL is reserved for future project/code links.
+
+## New coursework content (2026)
+
+The live-ready package contains 5 Math 541B PDFs and 9 selected Math 550 notebooks in both source `.ipynb` and static readable HTML formats.
+
+Math 541B focuses on mathematical statistics: hypothesis testing, MLE, confidence intervals, resampling, regression and ANOVA.
+
+Math 550 focuses on statistical learning and computational modeling: classification, model selection, Lasso, cross-validation, PCA, nonparametric regression, and stochastic simulations.
+
+### Editorial exclusions
+
+- `Math 550 HW 5.ipynb` mirrors HW 4, and `Math 550 HW 7.ipynb` mirrors HW 6; they were **not** uploaded twice.
+- `Mini assignment 5 Math 550.ipynb` references a class scores dataset (`scores_F2026_new.csv`) and is excluded until source-data privacy and publication permission are confirmed.
+- The notebooks show outputs generated in Elisa's supplied files; they were exported, **not rerun or correctness-audited**. `College.csv` and `Auto.csv` are absent from the submitted ZIP and are not bundled. Some notebooks use additional course or public datasets.
+- The scanned MATH 541B HW 1 retains Elisa's own handwritten presentation.
+- Verify USC's policy and any assignment copyright/solution-sharing restrictions before making a repository public. The package has **not** been published.
 
 ## Add future homework
 
